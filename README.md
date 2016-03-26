@@ -11,3 +11,5 @@ I have been using this setup with Arch Linux without any issues, only taking fro
 xiwi: To run xiwi I bind-mounted /proc from the Chrome OS host onto a directory in the container fs. Then I modified `croutonfindnacl` to use this proc directory to lookup the processes in the host.
 
 I am storing this here so it doesn't get lost as I stopped using Chrome OS (for now?). If anybody is interested feel free to ask for more details.
+
+Note to prevent confusion: This project is absolutely not related to docker (except that it uses a common library). The file `docker-daemon.sh` you see here is just a little helper I used to run a docker daemon in ChrOS, I had to do this because it is not possible to run it from within a container.
